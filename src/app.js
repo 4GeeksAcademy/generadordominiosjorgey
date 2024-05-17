@@ -2,13 +2,19 @@
 import "bootstrap";
 import "./style.css";
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+window.onload = () => {
+  document.querySelector("#botongenerador").addEventListener("click", () => {
+    document.querySelector("#respuesta").innerHTML = NOMBREdominio();
+  });
+  console.log("GENERADOR DE DOMINIOS");
 
-window.onload = function() {
-  let articulo = ["mi", "tu", "su", "nuestro", "vuestro"];
+  this;
+};
 
-  let adjetivo = [
+let NOMBREdominio = () => {
+  let articulos = ["MI", "TU", "SU", "EL", "VUESTRO"];
+
+  let adjetivos = [
     "mejor",
     "super",
     "increible",
@@ -17,21 +23,38 @@ window.onload = function() {
     "inmejorable"
   ];
 
-  let nombre = [
+  let nombres = [
     "BUSCADOR",
-    "JUEGO",
-    "PRECIO",
-    "VIDEO",
-    "COCHE DE OCASION",
-    "SALON GAMER"
+    "SALON_DE_JUEGO",
+    "PRECIO_BAJO",
+    "VIDEO_LOCO",
+    "COCHE_DE_OCASION",
+    "SALON_GAMER"
   ];
 
-  let puntocom = [".com", ".net", ".es", ".org", ".lol", ".juas", "wtf"];
+  let puntocomes = [".com", ".net", ".es", ".org", ".lol", ".juas", ".wtf"];
 
-  console.log(adjetivo);
+  let articulosINDEX = Math.floor(Math.random() * articulos.length);
+  let adjetivosINDEX = Math.floor(Math.random() * adjetivos.length);
+  let nombresINDEX = Math.floor(Math.random() * nombres.length);
+  let puntocomesINDEX = Math.floor(Math.random() * puntocomes.length);
 
-  adjetivoaaa;
-  sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss;
-
-  sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss;
+  return (
+    articulos[articulosINDEX] +
+    adjetivos[adjetivosINDEX] +
+    nombres[nombresINDEX] +
+    puntocomes[puntocomesINDEX]
+  );
 };
+
+//-- iteration --//
+
+// for (let articulo of articulos) {
+//  for (let adjetivo of adjetivos) {
+//    for (let nombre of nombres) {
+//     for (let puntocome of puntocomes) {
+//      NOMBREdominio.push(`${articulos}${adjetivos}${nombres}${puntocomes}`);
+//  }
+//  }
+//}
+// }
