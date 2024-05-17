@@ -6,6 +6,32 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
+  let articulo = ["mi", "tu", "su", "nuestro", "vuestro"];
+
+  let adjetivo = [
+    "mejor",
+    "super",
+    "increible",
+    "espectacular",
+    "imperdible",
+    "inmejorable"
+  ];
+
+  let nombre = [
+    "BUSCADOR",
+    "JUEGO",
+    "PRECIO",
+    "VIDEO",
+    "COCHE DE OCASION",
+    "SALON GAMER"
+  ];
+
+  let puntocom = [".com", ".net", ".es", ".org", ".lol", ".juas", "wtf"];
+
+  console.log(adjetivo);
+
+  adjetivoaaa;
+  sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss;
+
+  sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss;
 };
